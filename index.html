@@ -1,125 +1,97 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhusudan Panwar - Azure Data Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-<p class="p1">/* General Styles */</p>
-<p class="p1">body {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: #f4f4f4;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #333;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">header {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: #333;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 1rem 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">nav ul {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>justify-content: center;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">nav ul li {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 1rem;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">nav ul li a {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-weight: bold;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">section {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.skills-container {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>flex-wrap: wrap;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.skill {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>transition: transform 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.skill:hover {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>transform: scale(1.1);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">footer {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: #333;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 1rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>bottom: 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* Animations */</p>
-<p class="p1">@keyframes fadeIn {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>from {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>opacity: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>to {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>opacity: 1;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">@keyframes slideIn {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>from {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>transform: translateY(100px);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>opacity: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>to {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>transform: translateY(0);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>opacity: 1;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.intro, .skills-container, .project, .contact-info {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>animation: fadeIn 1s ease-in-out;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.skill, .project {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>animation: slideIn 1s ease-in-out;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">h2 {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-bottom: 2px solid #333;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 1rem;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">/* Responsive Design */</p>
-<p class="p1">@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav ul {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.skills-container {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1">}</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="intro">
+            <h1>Madhusudan Panwar</h1>
+            <p>Azure Data Engineer with 6 years of experience</p>
+            <p>Specializing in Azure Data Factory, Synapse Analytics, Databricks, Azure DevOps, and Fabric</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a highly skilled Data Engineer with 6 years of experience in designing, developing, and optimizing data solutions using Azure services. Currently working at Sogeti Ireland, I have a strong background in data integration, ETL processes, and big data analytics.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="https://docs.microsoft.com/en-us/azure/data-factory/media/index/azure-data-factory-icon.svg" alt="Azure Data Factory" width="50">
+                <p><strong>Azure Data Factory</strong></p>
+            </div>
+            <div class="skill">
+                <img src="https://docs.microsoft.com/en-us/azure/synapse-analytics/media/index/azure-synapse-analytics.svg" alt="Synapse Analytics" width="50">
+                <p><strong>Synapse Analytics</strong></p>
+            </div>
+            <div class="skill">
+                <img src="https://databricks.com/wp-content/uploads/2021/10/Databricks-Logo.png" alt="Azure Databricks" width="50">
+                <p><strong>Azure Databricks</strong></p>
+            </div>
+            <div class="skill">
+                <img src="https://docs.microsoft.com/en-us/azure/devops/media/index/azure-devops-icon.svg" alt="Azure DevOps" width="50">
+                <p><strong>Azure DevOps</strong></p>
+            </div>
+            <div class="skill">
+                <img src="https://fabric.microsoft.com/images/fabric-logo.svg" alt="Azure Fabric" width="50">
+                <p><strong>Azure Fabric</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Robust Data Pipelines</h3>
+            <p>Engineered robust data pipelines leveraging <strong>Azure Synapse Analytics</strong> and <strong>Azure Data Factory</strong>, resulting in the timely ingestion of data and enhanced operational efficiency.</p>
+        </div>
+        <div class="project">
+            <h3>Data Warehouse Solution</h3>
+            <p>Implemented a star-schema based data warehouse solution using <strong>Azure Synapse Analytics</strong> to enhance decision-making capabilities.</p>
+        </div>
+        <div class="project">
+            <h3>SAP Replica in Lakehouse</h3>
+            <p>Architected the SAP replica in Lakehouse using <strong>Azure Data Factory</strong> and <strong>Synapse</strong> with medallion architecture.</p>
+        </div>
+        <div class="project">
+            <h3>Lakehouse Architecture</h3>
+            <p>Utilized <strong>Azure Notebooks</strong> to establish Lakehouse architecture using Pyspark and Spark SQL.</p>
+        </div>
+        <div class="project">
+            <h3>Automated Reconciliation</h3>
+            <p>Automated reconciliation using Views and PowerBI report showcasing various audit reports for data accuracy.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: madhusudan.panwar@yahoo.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/madhusudan-panwar">linkedin.com/in/madhusudan-panwar</a></p>
+        <p>GitHub: <a href="https://github.com/nagavatar">github.com/nagavatar</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Madhusudan Panwar. All rights reserved.</p>
+    </footer>
 </body>
 </html>
